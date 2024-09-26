@@ -1,5 +1,7 @@
 package SortingFundamental;
 
+import LinearSearch.Student;
+
 import java.sql.SQLOutput;
 
 public class SelectionSort {
@@ -29,5 +31,13 @@ public class SelectionSort {
             System.out.println(e + " ");
         System.out.println();
 
+        Student[] students = {new Student("Alice", 98),
+                new Student("Bobo", 100),
+                new Student("Charles", 66)};
+        SelectionSort.sort(students);
+
+        for(Student student: students)
+            System.out.println(student + " ");
+        System.out.println();
     }
 }
